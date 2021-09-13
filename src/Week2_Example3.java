@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Example3 {
+public class Week2_Example3 {
     public static void main(String[] args){
         var studentNames = new ArrayList<String>();
         var reader = new Scanner(System.in);

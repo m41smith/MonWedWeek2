@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Example3 {
-
     public static void main(String[] args){
         var studentNames = new ArrayList<String>();
         var reader = new Scanner(System.in);
@@ -14,7 +13,10 @@ public class Example3 {
                 break;
             }
             studentNames.add(userResponse);
-
+        }
+        System.out.println("All of your students in the class are below:");
+        for (var studentName : studentNames){
+            System.out.println(studentName);
         }
     }
 }

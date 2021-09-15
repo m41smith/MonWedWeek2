@@ -9,11 +9,7 @@ public class Week3_RandomDemo {
         System.out.print("pick a random number from 1 to 10:");
         var usersNumber = inputReader.nextInt();
         while (usersNumber != randomNumber) {
-
-            if (randomNumber == usersNumber) {
-                return;
-            }
-            else if (randomNumber > usersNumber){
+            if (randomNumber > usersNumber) {
                 System.out.println("Unfortunately, " + usersNumber + " was too low. Guess again!");
                 usersNumber = inputReader.nextInt();
             }
@@ -21,7 +17,6 @@ public class Week3_RandomDemo {
                 System.out.println("Unfortunately, " + usersNumber + " was too high. Guess again!");
                 usersNumber = inputReader.nextInt();
             }
-
         }
         System.out.println("You were right! The number was " + randomNumber);
     }

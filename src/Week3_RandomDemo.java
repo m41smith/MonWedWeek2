@@ -11,12 +11,11 @@ public class Week3_RandomDemo {
         while (usersNumber != randomNumber) {
             if (randomNumber > usersNumber) {
                 System.out.println("Unfortunately, " + usersNumber + " was too low. Guess again!");
-                usersNumber = inputReader.nextInt();
             }
             else {
                 System.out.println("Unfortunately, " + usersNumber + " was too high. Guess again!");
-                usersNumber = inputReader.nextInt();
             }
+            usersNumber = inputReader.nextInt();
         }
         System.out.println("You were right! The number was " + randomNumber);
     }

@@ -8,7 +8,7 @@ public class Week3_FileExample {
         var studentFile = Paths.get(fileName);
         var allStudents = Files.readString(studentFile);
         String [] separetedNames = allStudents.split("\n");
-        //now lest show the user
+        //now lets show the user
         System.out.println("Here are the students in your class: ");
         for (String name : separetedNames) {
             System.out.println(name);
